@@ -80,11 +80,24 @@ a {
 .logo-group {
   display: flex;
   align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.logo-group:hover .logo-icon {
+  transform: rotate(15deg) scale(1.1);
 }
 
 .logo-text {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
+  font-size: 1.7rem;
   font-weight: 500;
   color: var(--text-primary);
 }
