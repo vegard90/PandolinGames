@@ -80,19 +80,6 @@ a {
 .logo-group {
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-
-.logo-icon {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  border-radius: 6px;
-  transition: transform 0.5s ease;
-}
-
-.logo-group:hover .logo-icon {
-  transform: rotate(15deg) scale(1.1);
 }
 
 .logo-text {
@@ -274,8 +261,39 @@ a {
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--text-secondary);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   max-width: 90%;
+}
+
+.game-actions {
+  margin-bottom: 32px;
+}
+
+.steam-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #171a21;
+  color: #c5c3c0;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 12px rgba(23, 26, 33, 0.12);
+}
+
+.steam-button:hover {
+  background-color: #2a475e;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(42, 71, 94, 0.25);
+}
+
+.steam-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 /* Game Specs Grid */
@@ -318,50 +336,17 @@ a {
   font-weight: 300;
 }
 
-/* Contact Section */
-.contact-section {
-  padding: 60px 0 80px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-text {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  margin-bottom: 24px;
-  max-width: 500px;
-}
-
-.contact-button {
-  display: inline-block;
-  background-color: var(--accent-color);
-  color: #ffffff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 1.05rem;
-  box-shadow: 0 4px 12px rgba(43, 94, 60, 0.15);
-  transition: var(--transition-smooth);
-}
-
-.contact-button:hover {
-  background-color: var(--accent-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(43, 94, 60, 0.25);
-}
-
 /* Footer styling */
 .footer {
   border-top: 1px solid var(--border-color);
   padding: 32px 0;
   background-color: var(--bg-color);
+  margin-top: 40px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-family: var(--font-mono);
   font-size: 0.8rem;
