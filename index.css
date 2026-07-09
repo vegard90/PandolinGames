@@ -349,6 +349,46 @@ a {
   font-weight: 300;
 }
 
+/* Contact Section */
+.contact-section {
+  padding: 60px 0 40px;
+}
+
+.contact-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  max-width: 90%;
+}
+
+.discord-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #5865f2;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 12px rgba(88, 101, 242, 0.2);
+}
+
+.discord-button:hover {
+  background-color: #4752c4;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(88, 101, 242, 0.35);
+}
+
+.discord-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 /* Footer styling */
 .footer {
   border-top: 1px solid var(--border-color);
